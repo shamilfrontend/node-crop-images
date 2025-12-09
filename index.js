@@ -126,7 +126,7 @@ async function main() {
             const relativePath = path.relative(INPUT_DIR, filePath);
             const outputPath = path.join(OUTPUT_DIR, relativePath);
 
-            // Создаем подпапки в выходной директории
+            // Создаем под папки в выходной директории
             const outputDir = path.dirname(outputPath);
             await ensureDirectoryExists(outputDir);
 
